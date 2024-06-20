@@ -1,0 +1,27 @@
+.contact {
+    height: 172px;
+    background-color: white;
+    margin: 8px;
+    padding: 8px;
+    cursor: grab;
+}
+
+.date-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date {
+    background-color: #dfdfdf;
+    border: 1px solid #afafaf;
+}
+
+.icons {
+    display: flex;
+}
+
+.icon{
+    background-color: #dfdfdf;
+    border: 1px solid #afafaf;
+    margin-left: 8px;
+}

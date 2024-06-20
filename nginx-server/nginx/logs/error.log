@@ -1,0 +1,7 @@
+2024/06/19 21:59:57 [emerg] 12380#11416: "server" directive is not allowed here in C:\nginx/conf/nginx.conf:1
+2024/06/19 22:00:27 [emerg] 12156#5644: "server" directive is not allowed here in C:\nginx/conf/nginx.conf:1
+2024/06/19 22:00:44 [emerg] 12872#10836: "server" directive is not allowed here in C:\nginx/conf/nginx.conf:1
+2024/06/19 22:01:31 [emerg] 7556#13196: "server" directive is not allowed here in C:\nginx/conf/nginx.conf:1
+2024/06/19 22:03:26 [emerg] 12648#7348: invalid number of arguments in "root" directive in C:\nginx/conf/nginx.conf:20
+2024/06/19 22:18:19 [emerg] 12760#9124: unexpected "}" in C:\Users\uSER\Desktop\Git\crm-frontend\nginx-server\nginx/conf/nginx.conf:41
+2024/06/19 22:19:13 [emerg] 11536#5340: unexpected "}" in C:\Users\uSER\Desktop\Git\crm-frontend\nginx-server\nginx/conf/nginx.conf:41

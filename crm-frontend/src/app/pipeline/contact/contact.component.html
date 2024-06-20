@@ -1,0 +1,23 @@
+<div class="contact">
+    <div class="date-row">
+        <div class="date">
+            <span>{{this.getDate()}}</span>
+        </div>
+        <div class="icons">
+            <button (click)="confirmDeleteContact()" >X</button>
+        </div>
+    </div>
+    <h4>{{this.contact.name}}</h4>
+    <button *ngIf="!this.flagAddingEnabled" (click)="enableFlagAdding()">Add a flag</button>
+    <form *ngIf="this.flagAddingEnabled" (ngSubmit)="addFlag(flag.value)">
+        <div>Add Flag:</div>
+        <input ngModel #flag="ngModel" type="text" name="flag" id="flag" placeholder="Flag">
+        <button>Add</button>
+        <button (click)="enableFlagAdding()">X</button>
+    </form>
+    <br>
+    <span class="tags" *ngFor="let flag of contact.flag; let isLast = last">
+        <a href="">{{ flag }}</a><span *ngIf="!isLast"> | </span>
+    </span>
+    
+</div>

@@ -1,0 +1,6 @@
+.columns{
+    margin-top: 16px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}

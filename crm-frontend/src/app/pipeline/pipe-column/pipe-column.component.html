@@ -1,0 +1,26 @@
+<div #columnDiv class="column">
+    <h3>{{title}}</h3>
+    <!-- <p>total: {{getTotal()}}</p> -->
+    <div style="margin-bottom: 8px;">
+        Bulk send Messages:<button (click)="bulkSend()" class="btn btn-primary" >send</button>
+    </div>
+    <form (ngSubmit)="searchContacts(search.value)">
+        <div class="search-group form-group">
+            <input class="form-control" ngModel #search="ngModel" type="text" id="search" name="search"
+                placeholder="Search">
+            <button type="submit" class="btn-search btn btn-primary">
+                <img src="assets/icons/search_white.svg" alt="SVG Icon" class="icon">
+            </button>
+        </div>
+    </form>
+
+    
+
+    <div cdkDropList [cdkDropListData]="contacts" (cdkDropListDropped)="drop($event)" class="list">
+        <ng-container *ngFor="let contact of contacts">
+            <app-contact *ngIf="isInQuery(contact.name)" [contact]="contact" cdkDrag
+                (removeContact)="onRemoveContact($event)">
+            </app-contact>
+        </ng-container>
+    </div>
+</div>
