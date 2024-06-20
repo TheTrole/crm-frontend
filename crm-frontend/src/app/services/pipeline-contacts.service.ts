@@ -100,4 +100,8 @@ export class PipelineContactsService {
       console.log("Added Flag");
     })
   }
+
+  addCustomer(customer: Customer): Observable<Customer> {
+    return this.http.post<Customer>(this.apiUrl, customer, { headers: { 'Authorization': `Bearer ${localStorage.getItem("token")}` } });
+  }
 }

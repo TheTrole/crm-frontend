@@ -5,6 +5,8 @@ import { LoginComponent } from "./auth/login/login.component";
 import { RegisterComponent } from "./auth/register/register.component";
 import { IsLoggedGurad } from "./guards/is-logged.guard";
 import { PipelineComponent } from "./pipeline/pipeline.component";
+import { ContactComponent } from "./pipeline/contact/contact.component";
+import { ContactsComponent } from "./contacts/contacts.component";
 
 const routes: Routes = [
     {
@@ -15,6 +17,11 @@ const routes: Routes = [
             {
                 path: "pipeline",
                 component: PipelineComponent,
+                canActivate: [IsLoggedGurad]
+            },
+            {
+                path: "contacts",
+                component: ContactsComponent,
                 canActivate: [IsLoggedGurad]
             },
         ]
